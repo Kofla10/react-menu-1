@@ -12,12 +12,12 @@ import { Report } from "../pages/Report";
     export const MyRoutes = () => {
       return (
         <BrowserRouter>
+        <NavBar/>
                 <Routes>
                     <Route exact path="/"  element={< Home />} />
-                    <Route exact path="/products" element={ < Product /> }/>
+                    <Route exact path="/product" element={ < Product /> }/>
                     <Route exact path="/report" element={ <Report/> }/>
                 </Routes>
-        
         </BrowserRouter>
       )
     }
