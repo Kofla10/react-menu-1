@@ -10,7 +10,7 @@ import * as IoIcons from 'react-icons/io'
 import '../css/NavBar.css'
 
 import { Data } from '../data/DataNavBar.jsx' 
-import { SubMenu } from '../data/SubMenu.jsx'
+import SubMenu from '../data/SubMenu.jsx'
 import styled from 'styled-components'
 
 
@@ -21,8 +21,6 @@ export const NavBar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
-  console.log(sidebar)
 
   return (
       <div>
@@ -37,13 +35,13 @@ export const NavBar = () => {
                 <NavIcon to='#'>
                   <AiIcons.AiOutlineClose onClick={showSidebar}/>
                 </NavIcon>
-                <SubMenu/>
-                {/* {
+                
+                {
                   Data.map((item, i) => {
-                    return <SubMenu key={i} />
+                    return <SubMenu key={i} item={item} close={showSidebar}/>
                     
                   })
-                } */}
+                }
 
               </SidebarWrap>
 

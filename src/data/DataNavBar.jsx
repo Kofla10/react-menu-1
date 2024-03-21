@@ -8,7 +8,8 @@ export const Data = [
       cName     : 'nav-text',
       icon      : <AiIcons.AiFillHome/>,
       iconClosed: <RiIcons.RiArrowDownSFill/>,
-      iconOpened: <RiIcons.RiArrowUpFill/>
+      iconOpened: <RiIcons.RiArrowUpFill/>,
+      
   
     },
     {
@@ -17,7 +18,27 @@ export const Data = [
       cName     : 'nav-text',
       icon      : <AiIcons.AiFillHome/>,
       iconClosed: <RiIcons.RiArrowDownSFill/>,
-      iconOpened: <RiIcons.RiArrowUpFill/>
+      iconOpened: <RiIcons.RiArrowUpFill/>,
+      subNav: [
+        {
+          title     : 'Report 1',
+          path      : '/report/reports1',
+          cName     : 'nav-text',
+          icon      : <AiIcons.AiFillHome/>,
+        },
+        {
+          title     : 'Report 2',
+          path      : '/report/reports2',
+          cName     : 'nav-text',
+          icon      : <AiIcons.AiFillHome/>,
+        },
+        {
+          title     : 'Report 3',
+          path      : '/report/reports3',
+          cName     : 'nav-text',
+          icon      : <AiIcons.AiFillHome/>,
+        }
+      ]
     },
     {
       title     : 'Product',
